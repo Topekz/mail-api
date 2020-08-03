@@ -1,0 +1,27 @@
+{
+  "name": "mail-api",
+  "version": "1.0.0",
+  "description": "Mail API for contact forms",
+  "main": "index.js",
+  "scripts": {
+    "dev": "eval $(cat .env.development.local) node index.js",
+    "start": "eval $(cat .env.production.local) node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Topekz/mail-api.git"
+  },
+  "author": "Topekz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Topekz/mail-api/issues"
+  },
+  "homepage": "https://github.com/Topekz/mail-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.11"
+  }
+}
