@@ -24,7 +24,12 @@ const transporter = nodemailer.createTransport({
     }
 });
 
-// Post request
+// Default GET
+app.get('/', (req, res) => {
+    res.send({ message: "mail-api is running" });
+});
+
+// POST request
 app.post('/', (req, res) => {
 
     const receiver = req.body.receiver;
