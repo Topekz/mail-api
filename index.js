@@ -8,8 +8,8 @@ const app = express();
 
 app.use(bodyParser.json())
 app.use(morgan("combined"));
-const whitelist = ['https://example.com', 'https://example2.com'];    // allowed origins
-app.use(cors({credentials: true, origin: whitelist}));
+const allowlist = ['https://example.com', 'https://example2.com'];    // allowed origins
+app.use(cors({credentials: true, origin: allowlist}));
 
 const port = process.env.PORT;          // PORT from .env.(development/production).local
 
